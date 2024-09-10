@@ -13,7 +13,9 @@
   },
   "scripts": {
     "start": "nodemon ./src/server.js",
-    "seed": "node ./scripts/seedDb.js"
+    "seed": "node ./scripts/seedDb.js",
+    "docker-build": "docker build -t cardio-app .",
+    "docker-run": "docker run -p 3001:3001 cardio-app"
   },
   "devDependencies": {
     "concurrently": "^8.0.1",
